@@ -1,0 +1,7 @@
+h1 {
+    font-family: sans-serif;
+}
+.todo-input {
+  height: 30px;
+  width: 200px;
+}

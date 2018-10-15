@@ -42,6 +42,7 @@ app.get('/', function (request, response) {
 
 // Create entry in address book
 app.post('/addressbook/', (request, response) => {
+  console.log(request.body);
   const newPerson = new Person(request.body);
   newPerson.save(function (error) {
     if (error) throw error; // If any of the required fields are missing,
